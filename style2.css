@@ -1,0 +1,168 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+.header {
+  background-color: #0d0c0c;
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  text-position: auto;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  
+}
+.mytitle {
+	
+	display: inline-block;
+	color: white;
+	font-family: Arial black;
+	text-position: relative;
+	margin: 0 auto;
+}
+
+
+.fa {
+  padding: 5px;
+  font-size: 5px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  float: right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: purple;
+  color: white;
+}
+
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+* {
+  box-sizing: border-box;
+}
+a:hover {
+  background-color: white;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: inline;
+}
+
+.column1 {
+	
+	float: right;
+	width: 25%;
+	padding: 5px;
+}
+
+
+.column2{
+	
+	float: center;
+	width: 25%;
+	padding: 5px;
+	
+}
+
+.pagination {
+  display: inline-block;
+  
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid white;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: purple;
+  color: white;
+  border: 1px solid purple;
+}
+
+.pagination a:hover:not(.active) {background-color: purple;}
